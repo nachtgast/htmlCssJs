@@ -1,3 +1,42 @@
-.book {
+body {
   background-color: rgb(255, 255, 224);
+  font-family: 'times new roman';
+  font-size: 10pt;
+}
+
+.book__title--red {
+  color: red;
+  text-align: center;
+}
+
+.book__title {
+  font-size: 12pt;
+}
+
+.book__dedication {
+  display: block;
+}
+
+.book__text {
+  display: block;
+}
+
+.book__chapter {
+  color: red;
+  text-align: center;
+  font-size: 12pt;
+}
+
+.book__separator {
+  border: 1px solid #000;
+}
+
+.book__image--center {
+  display: block;
+  margin: 0 auto;
+}
+
+.book__image {
+  display: block;
+  margin: 10px 0;
 }
