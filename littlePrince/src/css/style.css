@@ -15,10 +15,15 @@ body {
 
 .book__dedication {
   display: block;
+  text-transform: uppercase;
 }
 
 .book__text {
   display: block;
+}
+
+.book__text--emphasis {
+  font-style: italic;
 }
 
 .book__chapter {
@@ -27,9 +32,9 @@ body {
   font-size: 12pt;
 }
 
-.book__separator {
-  border: 1px solid #000;
-}
+/* .book__separator {
+  border: 1px solid #434040;
+} */
 
 .book__image--center {
   display: block;
