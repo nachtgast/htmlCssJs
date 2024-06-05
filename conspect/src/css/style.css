@@ -1,3 +1,10 @@
 body {
   background-color: mintcream;
 }
+
+.block {
+  background-color:aquamarine;
+  border: 1px, solid, black;
+  width: 600px;
+  margin: auto;
+}
