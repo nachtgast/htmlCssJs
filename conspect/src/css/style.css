@@ -1,10 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: mintcream;
+  background-color: rgb(216, 232, 224);
+  margin: 0;
+}
+
+.container {
+  border: 4px solid black;
+}
+
+.nav {
+  background-color: rgb(68, 118, 27);
+  margin: 0;
+  border: 3px solid black;
+}
+
+.nav__block {
+  position: relative;
+  left: 100px;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 10px;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
 }
 
 .block {
-  background-color:aquamarine;
-  border: 1px, solid, black;
+  background-color: rgb(127, 255, 212);
+  border: 1px solid rgb(0, 0, 0);
   width: 600px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.block__text {
+  margin: 0;
 }
