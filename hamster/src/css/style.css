@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.input-group {
+  margin-bottom: 10px;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: calc(20% - 20px); /* 5 карточек по ширине с учетом отступов */
+  box-sizing: border-box;
+}
+.card input {
+  width: 100px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.buttons {
+  margin-top: 20px;
+}
+.buttons button {
+  margin-right: 10px;
+}
+.output {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.card input[type='checkbox'] {
+  margin-top: 10px;
+}

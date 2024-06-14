@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Инвестиционный Калькулятор</title>
+  </head>
+  <body>
+    <div class="input-group">
+      <label for="money">Деньги: </label>
+      <input type="number" id="money" />
+    </div>
+    <div class="input-group">
+      <label for="pph">Прибыль в час (ПВЧ): </label>
+      <input type="number" id="pph" />
+    </div>
+
+    <div class="cards">
+      <div class="card" data-index="1">
+        <label>Fan Tokens</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="2">
+        <label>Staking</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="3">
+        <label>BTC pairs</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="4">
+        <label>ETH pairs</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="5">
+        <label>Top 10 cmc pairs</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="6">
+        <label>GameFi tokens</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="7">
+        <label>Defi2.0 tokens</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="8">
+        <label>SocialFi tokens</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="9">
+        <label>Meme coins</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="10">
+        <label>Shit coins</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="11">
+        <label>MT*10</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="12">
+        <label>MT*20</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="13">
+        <label>MT*30</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="14">
+        <label>MT*50</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="15">
+        <label>MT*75</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="16">
+        <label>MT*100</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="17">
+        <label>Derivatives</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="18">
+        <label>Prediction markets</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="19">
+        <label>Web3 integration</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="20">
+        <label>DAO</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="21">
+        <label>P2P trading</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="22">
+        <label>Trading bots</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="23">
+        <label>Support team</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="24">
+        <label>Hamster Book</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="25">
+        <label>X</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="26">
+        <label>Cointelegraph</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="27">
+        <label>HamsterTube</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="28">
+        <label>HamsterGram</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="29">
+        <label>TikTok</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="30">
+        <label>Coindesk</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="31">
+        <label>Influencers</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="32">
+        <label>CEO</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="33">
+        <label>IT team</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="34">
+        <label>Marketing</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="35">
+        <label>Partnership program</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="36">
+        <label>Product team</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="37">
+        <label>BisDev team</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="38">
+        <label>Two factor authentication</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="39">
+        <label>UX and UI team</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="40">
+        <label>Security team</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="41">
+        <label>QA team</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="42">
+        <label>Antihacking shield</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="43">
+        <label>Risk management team</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="44">
+        <label>Security Audition</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="45">
+        <label>Anonymous transaction ban</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="46">
+        <label>Blocking suspicious accounts</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="47">
+        <label>Tokenomics expert</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="48">
+        <label>Consensus Explorer pass</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="49">
+        <label>VC Labs</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="50">
+        <label>Complaince officer</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="51">
+        <label>Welcome to Amsterdam</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="52">
+        <label>KYC</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="53">
+        <label>KYB</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="54">
+        <label>Legal opinion</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="55">
+        <label>SEC transparancy</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="56">
+        <label>Anti money loundering</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="57">
+        <label>License UAE</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="58">
+        <label>License Europe</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="59">
+        <label>License Asia</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="60">
+        <label>License South America</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="61">
+        <label>License Australia</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="62">
+        <label>License North America</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="63">
+        <label>License Nigeria</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="64">
+        <label>License Japan</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="65">
+        <label>Licence Ethiopia</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="66">
+        <label>Premarket Launch</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="67">
+        <label>Hamsret Combat Merch</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="68">
+        <label>TON + HK = Success</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="69">
+        <label>Consensus Piranha Pass</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="70">
+        <label>Web3 academy launch</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="71">
+        <label>YouTube Gold Button</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="72">
+        <label>Hamster YouTube Channel</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="73">
+        <label>Bitcoin Pizza Day</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="74">
+        <label>Top 10 Global Ranking</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="75">
+        <label>NFT Collection Launch</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="76">
+        <label>Dubai office</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="2">
+        <label>Special Hamster Conference</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="77">
+        <label>Short squeeze</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="78">
+        <label>There are two chairs</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="79">
+        <label>Long squeeze</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" data-index="80">
+        <label>Villa for the DEV team</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="81">
+        <label>App Center Listing</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="82">
+        <label>Bogdanoff is calling</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="83">
+        <label>USDT on TON</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+      <div class="card" data-index="84">
+        <label>Акция 2</label><br />
+        <label>Стоимость: </label><input type="number" class="cost" /><br />
+        <label>Прибавка к ПВЧ: </label><input type="number" class="pph-add" />
+        <input type="checkbox" class="select-card" /> Выбрать
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="calculateTime()">Время до 1млрд</button>
+      <button onclick="bestInvestment()">Лучшая инвестиция</button>
+      <button onclick="quickestROI()">Быстрейшая окупаемость</button>
+      <button onclick="saveData()">Сохранить данные</button>
+      <button onclick="loadData()">Загрузить данные</button>
+      <button onclick="calculateSelected()">Рассчитать для выбранных</button>
+    </div>
+
+    <div class="output" id="output"></div>
+
+    <script>
+      // Функция для расчета времени до 1_000_000_000
+      function calculateTime() {
+        let money = parseFloat(document.getElementById('money').value)
+        let pph = parseFloat(document.getElementById('pph').value)
+        let target = 1000000000
+        let hours = (target - money) / pph
+        document.getElementById('output').innerText = `Время до 1_000_000_000: ${hours.toFixed(2)} часов`
+      }
+
+      // Функция для поиска лучшей инвестиции
+      function bestInvestment() {
+        let money = parseFloat(document.getElementById('money').value)
+        let pph = parseFloat(document.getElementById('pph').value)
+        let target = 1000000000
+        let initialTime = (target - money) / pph
+        let minTime = initialTime
+        let bestStock = ''
+        let timeSaved = 0
+        let found = false
+
+        document.querySelectorAll('.card').forEach(card => {
+          let cost = parseFloat(card.querySelector('.cost').value)
+          let pphAdd = parseFloat(card.querySelector('.pph-add').value)
+          let newPPH = pph + pphAdd
+          let newMoney = money - cost
+          let time = (target - newMoney) / newPPH
+          let stockName = card.querySelector('label').innerText
+
+          if (time < minTime && cost <= money) {
+            timeSaved = initialTime - time
+            minTime = time
+            bestStock = stockName
+            found = true
+          }
+        })
+
+        if (found) {
+          document.getElementById(
+            'output',
+          ).innerText = `Лучшая инвестиция: ${bestStock}, время до 1_000_000_000 уменьшится на ${timeSaved.toFixed(
+            2,
+          )} часов`
+        } else {
+          document.getElementById('output').innerText = `Нет акций, которые бы уменьшили время до 1_000_000_000`
+        }
+      }
+
+      // Функция для поиска акции с быстрейшей окупаемостью
+      function quickestROI() {
+        let money = parseFloat(document.getElementById('money').value)
+        let pph = parseFloat(document.getElementById('pph').value)
+        let initialTime = (1000000000 - money) / pph
+        let minROI = Infinity
+        let bestStock = ''
+        let paybackTime = 0
+        let found = false
+
+        document.querySelectorAll('.card').forEach(card => {
+          let cost = parseFloat(card.querySelector('.cost').value)
+          let pphAdd = parseFloat(card.querySelector('.pph-add').value)
+          let roi = cost / pphAdd
+          let newPPH = pph + pphAdd
+          let newMoney = money - cost
+          let time = (1000000000 - newMoney) / newPPH
+          let stockName = card.querySelector('label').innerText
+
+          if (roi < minROI && cost <= money && time <= initialTime) {
+            minROI = roi
+            bestStock = stockName
+            paybackTime = roi
+            found = true
+          }
+        })
+
+        if (found) {
+          document.getElementById(
+            'output',
+          ).innerText = `Быстрейшая окупаемость: ${bestStock}, окупится за ${paybackTime.toFixed(2)} часов`
+        } else {
+          document.getElementById('output').innerText = `Нет акций, которые бы уменьшили время до 1_000_000_000`
+        }
+      }
+
+      // Функция для сохранения данных
+      function saveData() {
+        let money = document.getElementById('money').value
+        let pph = document.getElementById('pph').value
+
+        localStorage.setItem('money', money)
+        localStorage.setItem('pph', pph)
+
+        document.querySelectorAll('.card').forEach((card, index) => {
+          let cost = card.querySelector('.cost').value
+          let pphAdd = card.querySelector('.pph-add').value
+          localStorage.setItem(`card${index + 1}_cost`, cost)
+          localStorage.setItem(`card${index + 1}_pphAdd`, pphAdd)
+        })
+
+        alert('Данные сохранены')
+      }
+
+      // Функция для загрузки данных
+      function loadData() {
+        let money = localStorage.getItem('money')
+        let pph = localStorage.getItem('pph')
+
+        if (money !== null) document.getElementById('money').value = money
+        if (pph !== null) document.getElementById('pph').value = pph
+
+        document.querySelectorAll('.card').forEach((card, index) => {
+          let cost = localStorage.getItem(`card${index + 1}_cost`)
+          let pphAdd = localStorage.getItem(`card${index + 1}_pphAdd`)
+
+          if (cost !== null) card.querySelector('.cost').value = cost
+          if (pphAdd !== null) card.querySelector('.pph-add').value = pphAdd
+        })
+
+        alert('Данные загружены')
+      }
+
+      // Функция для расчета уменьшения времени до 1_000_000_000 при покупке выбранных акций
+      function calculateSelected() {
+        let selectedCards = document.querySelectorAll('.select-card:checked')
+        if (selectedCards.length > 3) {
+          alert('Можно выбрать не более 3 акций одновременно')
+          return
+        }
+
+        let money = parseFloat(document.getElementById('money').value)
+        let pph = parseFloat(document.getElementById('pph').value)
+        let target = 1000000000
+        let initialTime = (target - money) / pph
+
+        let totalCost = 0
+        let totalPPHAdd = 0
+
+        selectedCards.forEach(checkbox => {
+          let card = checkbox.closest('.card')
+          totalCost += parseFloat(card.querySelector('.cost').value)
+          totalPPHAdd += parseFloat(card.querySelector('.pph-add').value)
+        })
+
+        let newMoney = money - totalCost + 5000000 // Добавляем 5_000_000
+        let newPPH = pph + totalPPHAdd
+        let newTime = (target - newMoney) / newPPH
+
+        if (newTime < initialTime) {
+          document.getElementById('output').innerText = `Покупка выбранных акций уменьшит время до 1_000_000_000 на ${(
+            initialTime - newTime
+          ).toFixed(2)} часов`
+        } else {
+          document.getElementById(
+            'output',
+          ).innerText = `Покупка выбранных акций не уменьшит время до 1_000_000_000, увеличит на ${(
+            newTime - initialTime
+          ).toFixed(2)} часов`
+        }
+      }
+
+      // Загружаем данные при загрузке страницы
+      window.onload = function () {
+        loadData()
+      }
+    </script>
+  </body>
+</html>

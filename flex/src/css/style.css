@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  background: url('../img/blue-sky-and-clouds-background.jpg') center center/cover no-repeat;
+  border: 1px solid black;
+}
